@@ -1,0 +1,91 @@
+{
+  "key": "group_6627864c56f35",
+  "title": "PERN",
+  "fields": [
+    {
+      "key": "field_6627867ff85c1",
+      "label": "Listy mailingowe",
+      "name": "mailing_lists",
+      "type": "repeater",
+      "layout": "table",
+      "button_label": "Dodaj listę",
+      "sub_fields": [
+        {
+          "key": "field_662787ccf56b3",
+          "label": "Nazwa",
+          "name": "name",
+          "type": "text",
+          "wrapper": {
+            "width": "20"
+          }
+        },
+        {
+          "key": "field_66278945b3e38",
+          "label": "Szablon",
+          "name": "template",
+          "type": "radio",
+          "choices": {
+            "1": "Szablon 1",
+            "2": "Szablon 2"
+          },
+          "wrapper": {
+            "width": "20"
+          }
+        },
+        {
+          "key": "field_66278796f56b1",
+          "label": "Lista",
+          "name": "lista",
+          "type": "repeater",
+          "button_label": "Dodaj użytkownika",
+          "sub_fields": [
+            {
+              "key": "field_662787a6f56b2",
+              "label": "Użytkownik",
+              "name": "user",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "field_66278a74b3e3b",
+      "label": "Szablony",
+      "name": "my_select_values",
+      "type": "repeater",
+      "layout": "block",
+      "button_label": "Dodaj wiersz",
+      "sub_fields": [
+        {
+          "key": "field_66278b1bb3e3d",
+          "label": "Instrukcja",
+          "name": "instruction",
+          "type": "message",
+          "message": "Dostępne zmienne:</br> ##USER## - imię i nazwisko użytkownika,</br> ##LIST## - nazwa listy mailngowej do której został przypisany użytkownik,</br> ##LINK## - link do artykułu"
+        },
+        {
+          "key": "field_66278fd1cdafa",
+          "label": "Nazwa",
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "key": "field_66278a8bb3e3c",
+          "label": "Szablon",
+          "name": "tpl",
+          "type": "wysiwyg"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "options_page",
+        "operator": "==",
+        "value": "pern-settings"
+      }
+    ]
+  ]
+}
