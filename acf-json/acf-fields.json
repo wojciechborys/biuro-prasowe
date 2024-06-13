@@ -11,6 +11,15 @@
       "button_label": "Dodaj listę",
       "sub_fields": [
         {
+          "key": "field_662787ccf56b4",
+          "label": "Nazwa wyświetlana",
+          "name": "nice_name",
+          "type": "text",
+          "wrapper": {
+            "width": "20"
+          }
+        },
+        {
           "key": "field_662787ccf56b3",
           "label": "Nazwa",
           "name": "name",
@@ -62,7 +71,7 @@
           "label": "Instrukcja",
           "name": "instruction",
           "type": "message",
-          "message": "Dostępne zmienne:</br> ##USER## - imię i nazwisko użytkownika,</br> ##LIST## - nazwa listy mailngowej do której został przypisany użytkownik,</br> ##LINK## - link do artykułu"
+          "message": "Dostępne zmienne:</br> %%POST_CONTENT%% - Treść wybranego wpisu</br>  %%POST_TITLE%% - Tytuł wybranego postu</br>  %%POST_LINK%% - Odnośnik do wybranego postu"
         },
         {
           "key": "field_66278fd1cdafa",
